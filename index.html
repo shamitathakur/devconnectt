@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background: #ffeb3b;
+            color: #333;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 40px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 20px;
+        }
+        .resume-btn, .logout-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .resume-btn {
+            background: #4caf50;
+        }
+        .logout-btn {
+            background: #ff5722;
+            border: none;
+            cursor: pointer;
+        }
+        .resume-btn:hover, .logout-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="register.html">📝 Register</a>
+        <a href="login.html">🔑 Login</a>
+        <a href="exit.html">🚪 Exit</a>
+    </nav>
+    <h1>Welcome to My Website</h1>
+    <p>Hi, I'm Rajeshwari. Explore my work and download my resume.</p>
+    <a href="resume.pdf" target="_blank" class="resume-btn">📄 View Resume</a>
+    <br>
+    <button class="logout-btn" onclick="window.location.href='exit.html'">Logout</button>
+</body>
+</html>
